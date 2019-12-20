@@ -65,7 +65,7 @@
                         <div class="card-header">
                             <h2 class="text-center">Sign Up</h2>
                         </div>
-                        <div class="class-body">
+                        <div class="card-body">
                             <form method="post" action="">
                                 <div class="form-control">
                                     <label><b>Title:</b></label>

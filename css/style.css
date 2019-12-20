@@ -21,5 +21,11 @@ aside {
     background-color: #cccccc;
     /*    height: 30vh;*/
     border-right: 1px solid #bbbbbb;
-    position: relative;
+    position: fixed;
+}
+
+
+#aside1 {
+    border-left: 1px solid #bbbbbb;
+    background-color: aqua;
 }

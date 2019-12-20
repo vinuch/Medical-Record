@@ -46,13 +46,14 @@
             <div class="row">
                 <div class="col-md-4">
                     <aside>
-                        <div class="sidebar mt-5 text-center" id="sidebar">
-                            <h6 class="mb-4" hidden><a href="PatientRegistrationForm.php">HOSPITAL INFORMATION</a></h6>
-                            <h6 class="mb-4"><a href="PatientRegistrationForm1.php">PATIENT INFORMATION</a></h6>
-                            <h6 class="mb-4"><a href="PatientRegistrationForm2.php">EMERGENCY CONTACT</a></h6>
-                            <h6 class="mb-4"><a href="MedicalHistory1.php">MEDICAL HISTORY</a></h6>
-                            <h6 class="mb-4"><a href="MedicalHistory2.php">MEDICAL HISTORY (CONTD.)</a></h6>
-
+                        <div class="sidebar mt-5 text-center">
+                            <ul>
+                                <li class="mb-4 aside1" hidden><a href="PatientRegistrationForm.php">HOSPITAL INFORMATION</a></li>
+                                <li class="mb-4 aside1"><a href="PatientRegistrationForm1.php">PATIENT INFORMATION</a></li>
+                                <li class="mb-4 aside1"><a href="PatientRegistrationForm2.php">EMERGENCY CONTACT</a></li>
+                                <li class="mb-4 aside1"><a href="MedicalHistory1.php">MEDICAL HISTORY</a></li>
+                                <li class="mb-4 aside1"><a href="MedicalHistory2.php">MEDICAL HISTORY (CONTD.)</a></li>
+                            </ul>
                         </div>
                     </aside>
                 </div>
