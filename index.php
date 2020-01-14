@@ -1,5 +1,5 @@
 <?php
-require 'db_query/InsertQuery.php';
+require 'php_db/db_query/InsertQuery.php';
 
 $fullnameErr = ""; $genderErr = ""; $emailErr = "";
 

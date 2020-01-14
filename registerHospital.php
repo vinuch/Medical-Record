@@ -1,5 +1,5 @@
 <?php 
-require 'php_db/db_query/InsertQuery.php';
+require 'db_query/InsertQuery.php';
 
 $hospitalNameErr = ""; $hospitalAddressErr = ""; $cityErr = ""; $stateErr = ""; $hospitalPhoneErr = ""; 
 
@@ -131,8 +131,14 @@ if (isset($_POST['btnSubmit'])) {
     <?php 
     }
     if ( (isset($_POST['btnSubmit']) and (empty($hospitalNameErr) or empty($hospitalAddressErr) or empty($cityErr) or empty($stateErr) or empty($hospitalPhoneErr)))) {
-    echo $hospitalName;
+        $insertQuery = new InsertQuery;
+        $response = $insertQuery->insertHospital($hospitalName, $hospitalAddress, $city, $state, $hospitalPhone);
+        if (!$response['status']) {
+            echo "We had a technical issue, please go back try again <br>";
+            echo $response['message'];
+        }
     }
+    
     ?>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
